@@ -21,3 +21,7 @@ export const updatePostInput = z.object({
     title: z.string().optional(),
     content: z.string().optional(),
 });
+export type UpdatePostType = z.infer<typeof updatePostInput>;
+export type CreatePostType = z.infer<typeof createPostInput>;
+export type SigninType = z.infer<typeof signinInput>;
+export type SignupType = z.infer<typeof signupInput>;
